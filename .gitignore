@@ -1,0 +1,13 @@
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Node Package Manager
+node_modules
+
+# Build Files
+dist
+
+# Custom
+.DS_Store

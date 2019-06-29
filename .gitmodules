@@ -1,0 +1,3 @@
+[submodule "wp-content/themes/berest"]
+	path = wp-content/themes/berest
+	url = git@github.com:davletbaev/berest.git
