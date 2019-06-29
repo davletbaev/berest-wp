@@ -1,0 +1,25 @@
+{% extends "layouts/_base.html" %}
+
+{% set title = "Берест" %}
+{% set currentPath = '/' %}
+
+{% block content %}
+  {% include "components/_header.html" %}
+  
+  <main class="main">
+    {% include "components/_cover.html" %}
+    {% include "components/_features.html" %}
+    {% include "components/_advantages.html" %}
+    {% include "components/_packages.html" %}
+    {% include "components/_questions.html" %}
+    {% include "components/_reasons.html" %}
+    {% include "components/_projects.html" %}
+    {% include "components/_show.html" %}
+    {% include "components/_construction.html" %}
+    {% include "components/_reviews.html" %}
+    {% include "components/_steps.html" %}
+    {% include "components/_faq.html" %}
+  </main>
+
+  {% include "components/_footer.html" %}
+{% endblock %}

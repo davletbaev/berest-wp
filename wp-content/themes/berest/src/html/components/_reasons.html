@@ -1,0 +1,56 @@
+{% set reasons = [
+  {
+    img: 'img/content/reasons/management.png',
+    title: 'Грамотные менеджеры',
+    desc: 'Наши менеджеры могут пояснить вам детали производства, эксплуатации дома и ответить на самые каверзные технические вопросы'
+  },
+  {
+    img: 'img/content/reasons/production.png',
+    title: 'Собственное производство',
+    desc: 'Не пилорама на МКАД и не иллюзорное производство. Это собственные производственные мощности, склады, столярные цеха и покрасочные камеры'
+  },
+  {
+    img: 'img/content/reasons/safety.png',
+    title: 'Бережность и надежность',
+    desc: 'Материалы на монтаже укрываются пленкой, комплектующие от поставщиков в оригинальной упаковке, с инструкциями  по применению'
+  },
+  {
+    img: 'img/content/reasons/profit.png',
+    title: 'Соотношение цены и качества',
+    desc: 'За счет собственного производства и отлаженной годами схемы работы, вы получаете симбиоз доступной цены и качества'
+  },
+  {
+    img: 'img/content/reasons/expertize.png',
+    title: 'Команда специалистов',
+    desc: 'У нас в команде 34 специалиста, суммарный опыт которых больше 120 лет. В среднем, над каждым проектом трудится от  5 до 10 человек'
+  }
+] %}
+
+<section class="section reasons">
+  <div class="container">
+    <div class="row">
+      <div class="col reasons__item reasons__item--heading">
+        <span>5 причин</span>
+        <span>почему строительство дома заказывают у нас</span>
+      </div>
+
+      {% for item in reasons %}
+        <div class="col media reasons__item">
+          <img src="{{ item.img }}" class="mr-3" alt="{{ item.title }}">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">{{ item.title }}</h5>
+            {{ item.desc }}
+          </div>
+        </div>
+      {% endfor %}
+
+      <div class="col media reasons__item reasons__item--last">
+        <img src="img/content/reasons/know-how.png" class="mr-3" alt="Наше ноу-хау">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Наше ноу-хау</h5>
+          Работаем по собственной методике уникальных узловых соединений. За годы работы разработали свою систему узлов и соединений, благодаря чему улучшили надежность конструкций
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

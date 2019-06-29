@@ -1,0 +1,42 @@
+{% set features = [
+  {
+    img: 'img/content/features/house.png',
+    alt: 'Дом',
+    desc: '<p><b>Более 450</b> построеных проектов</p>'
+  },
+  {
+    img: 'img/content/features/helmet.png',
+    alt: 'helmet',
+    desc: '<p><b>13 лет</b> на рынке строительства</p>'
+  },
+  {
+    img: 'img/content/features/wood.png',
+    alt: 'wood',
+    desc: '<p>Используем только <b>сухой пиломатериал!</b></p>'
+  },
+  {
+    img: 'img/content/features/scheme.png',
+    alt: 'Чертеж',
+    desc: '<p>Строим по собственной методике <b>уникальных узловых соединений</b></p><a href="#">Читать подробнее</a>'
+  }
+] %}
+
+<section class="section features">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {% for item in features %}
+          <div class="feature">
+            <div class="feature__img-wrap">
+              <img class="feature__img" src="{{ item.img }}" alt="{{ item.alt }}">
+            </div>
+
+            <div class="feature__content">
+              {{ item.desc | safe }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

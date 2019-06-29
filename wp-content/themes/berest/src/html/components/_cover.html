@@ -1,0 +1,21 @@
+<section class="cover">
+  <div class="cover__bg"></div>
+
+  <div class="cover__content container">
+    <p class="cover__heading">Построим каркасный дом для отдыха или постоянного проживания дешевле конкурентов на 15%</p>
+    <p class="cover__desc">За счет собственного производства в МО и сокращения издержек на всех этапах строительства </p>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">
+      Получить бесплатную консультацию
+    </button>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-label="Форма обратной связи" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      {{ contactForm() }}
+    </div>
+  </div>
+</div>

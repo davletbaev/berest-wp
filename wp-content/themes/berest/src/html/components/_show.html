@@ -1,0 +1,77 @@
+<section class="section show">
+  <div class="show__bg"></div>
+
+  <div class="container">
+    <div class="row">
+      <h2 class="col section__heading">Запишитесь на просмотр готовых проектов</h2>
+
+      <div class="col media">
+        <img src="img/content/show/look.png" class="mr-3" alt="Бинокль">
+        <div class="media-body">
+          И посмотрите вживую наши дома. Вы лично убедитесь в качестве нашей работы, а также обсудить все вопросы с менеджером
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p>У нас есть две смотровых площадки в Москве</p>
+
+        <div class="card show-space">
+          <div class="card-body">
+            <h5 class="card-title">Домодедово <a href="#">Показать на карте</a></h5>
+            
+            <div class="row">
+              <div class="col media">
+                <img src="img/ui/marker.png" class="mr-3" alt="Адрес">
+                <div class="media-body">
+                  Москва, МКАД 65 км, ТД Синдика, д. 3/8
+                </div>
+              </div>
+
+              <div class="col media">
+                <img src="img/ui/marker.png" class="mr-3" alt="Проекты">
+                <div class="media-body">
+                  Авилон 2, Пересвет ЛК, Любава
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card show-space">
+          <div class="card-body">
+            <h5 class="card-title">Домодедово <a href="#">Показать на карте</a></h5>
+            
+            <div class="row">
+              <div class="col media">
+                <img src="img/ui/marker.png" class="mr-3" alt="Адрес">
+                <div class="media-body">
+                  Москва, МКАД 65 км, ТД Синдика, д. 3/8
+                </div>
+              </div>
+
+              <div class="col media">
+                <img src="img/ui/marker.png" class="mr-3" alt="Проекты">
+                <div class="media-body">
+                  Авилон 2, Пересвет ЛК, Любава
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-show">Записаться на просмотр</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-show" tabindex="-1" role="dialog" aria-label="Запись на просмотр" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      {{ contactForm('show') }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+{% set packagesFeatures = [
+  {
+    alt: '1',
+    img: 'img/ui/one.png',
+    desc: 'Можете выбрать из 40 уже готовых проектов'
+  },
+  {
+    alt: '2',
+    img: 'img/ui/two.png',
+    desc: 'Либо изменить планировку любого проекта под себя'
+  },
+  {
+    alt: '3',
+    img: 'img/ui/three.png',
+    desc: 'Также мы можем для вас разработать собственный уникальный проект'
+  }
+] %}
+
+{% set packagesOffers = [
+  {
+    img: 'img/content/packages/base.png',
+    title: 'Базовая'
+  },
+  {
+    img: 'img/content/packages/demiseason.png',
+    title: 'Межсезонная'
+  },
+  {
+    img: 'img/content/packages/winter.png',
+    title: 'Зимняя'
+  }
+] %}
+
+<section class="section packages">
+  <div class="packages__bg"></div>
+
+  <div class="packages__content container">
+    <div class="row">
+      <div class="col packages__features">
+        <h2 class="section__heading text-left">Вы сами выбираете каким будет ваш дом</h2>
+        
+        <ul class="list-unstyled packages__list">
+          {% for item in packagesFeatures %}
+            <li class="media">
+              <img src="{{ item.img }}" class="mr-3" alt="{{ alt }}">
+              <div class="media-body">
+                {{ item.desc }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+      <div class="col packages__offers">
+        <p class="text-center">Вам доступны 3 пакетных предложения комплектации</p>
+        
+        <ul class="list-unstyled packages__list">
+          {% for item in packagesOffers %}
+            <li class="feature">
+              <div class="feature__img-wrap">
+                <img class="feature__img" src="{{ item.img }}" alt="{{ item.title }}">
+              </div>
+
+              <div class="feature__content">
+                {{ item.title }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

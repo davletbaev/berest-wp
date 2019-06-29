@@ -1,0 +1,401 @@
+<section class="section advantages">
+  <div class="container">
+    <h2 class="section__heading">Почему именно каркасный дом?</h2>
+
+    <ul class="nav nav-tabs" id="projects" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="suburban-tab" data-toggle="tab" href="#suburban" role="tab" aria-controls="suburban" aria-selected="true">Дачные дома</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="cottages-tab" data-toggle="tab" href="#cottages" role="tab" aria-controls="cottages" aria-selected="false">Коттеджи</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="frame-tab" data-toggle="tab" href="#frame" role="tab" aria-controls="frame" aria-selected="false">Каркас 200</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="one-stage-tab" data-toggle="tab" href="#one-stage" role="tab" aria-controls="one-stage" aria-selected="false">Одноэтажные дома</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="projectsContent">
+      <div class="tab-pane fade show active" id="suburban" role="tabpanel" aria-labelledby="suburban-tab">
+        <div class="row">
+          {% for item in [1,2,3,4] %}
+            <div class="col">
+              <div class="card">
+                <div class="ribbon">Просмотр на площадке</div>
+
+                <img src="img/content/projects/house1.jpg" alt="House">
+
+                <div class="card-body">
+                  <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                  <p><b>Размер дома:</b> 8х9 м</p>
+                  <p><b>Площадь:</b> 110 м2</p>
+                  <p><b>Сроки строительства:</b> до 35 дней</p>
+
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                      <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+
+      <div class="tab-pane fade" id="cottages" role="tabpanel" aria-labelledby="cottages-tab">
+        <div class="row">
+          {% for item in [1,2,3,4] %}
+            <div class="col">
+              <div class="card">
+                <div class="ribbon">Просмотр на площадке</div>
+
+                <img src="img/content/projects/house2.jpg" alt="House">
+
+                <div class="card-body">
+                  <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                  <p><b>Размер дома:</b> 8х9 м</p>
+                  <p><b>Площадь:</b> 110 м2</p>
+                  <p><b>Сроки строительства:</b> до 35 дней</p>
+
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                      <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="tab-pane fade" id="frame" role="tabpanel" aria-labelledby="frame-tab">
+        <div class="row">
+          {% for item in [1,2,3,4] %}
+            <div class="col">
+              <div class="card">
+                <div class="ribbon">Просмотр на площадке</div>
+
+                <img src="img/content/projects/house1.jpg" alt="House">
+
+                <div class="card-body">
+                  <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                  <p><b>Размер дома:</b> 8х9 м</p>
+                  <p><b>Площадь:</b> 110 м2</p>
+                  <p><b>Сроки строительства:</b> до 35 дней</p>
+
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                      <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="tab-pane fade" id="one-stage" role="tabpanel" aria-labelledby="one-stage-tab">
+        <div class="row">
+          {% for item in [1,2,3,4] %}
+            <div class="col">
+              <div class="card">
+                <div class="ribbon">Просмотр на площадке</div>
+
+                <img src="img/content/projects/house2.jpg" alt="House">
+
+                <div class="card-body">
+                  <h5 class="card-title">Каркасный дом «Калипсо»</h5>
+                  <p><b>Размер дома:</b> 8х9 м</p>
+                  <p><b>Площадь:</b> 110 м2</p>
+                  <p><b>Сроки строительства:</b> до 35 дней</p>
+
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                  <div class="project__badge bade">
+                    <div class="badge__img"></div>
+                    <div class="badge__value">2</div>
+                    <div class="badge__label">кровати</div>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-form">Узнать точную стоимость</button>
+                      <a href="#" data-toggle="modal" data-target="#projects-modal">Смотреть подробную комплектацию</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-outline-primary btn-lg">Показать еще проекты</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="projects-modal" tabindex="-1" role="dialog" aria-label="Форма обратной связи" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="project-details">
+        <div class="row">
+          <div class="col">
+            <div class="fotorama" data-nav="thumbs">
+              <img src="img/content/projects/house1.jpg" alt="Дом 1">
+              <img src="img/content/projects/house2.jpg" alt="Дом 2">
+              <img src="img/content/projects/house1.jpg" alt="Дом 3">
+              <img src="img/content/projects/house2.jpg" alt="Дом 4">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="project-details__content">
+              <h3>
+                Каркасный дом «Калипсо»
+              </h3>
+
+              <p>Выберите комплектацию</p>
+              <ul class="nav nav-tabs" id="projects" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="complect-base-tab" data-toggle="tab" href="#complect-base" role="tab" aria-controls="complect-base" aria-selected="true">Базовая</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="complect-suburban-tab" data-toggle="tab" href="#complect-suburban" role="tab" aria-controls="complect-suburban" aria-selected="false">Дачный дом</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="complect-warm-tab" data-toggle="tab" href="#complect-warm" role="tab" aria-controls="complect-warm" aria-selected="false">Теплый дом</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="complect-full-tab" data-toggle="tab" href="#complect-full" role="tab" aria-controls="complect-full" aria-selected="false">Под ключ</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="projectsContent">
+                <div class="tab-pane fade show active" id="complect-base" role="tabpanel" aria-labelledby="complect-base-tab">
+                  <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                  <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола  35мм.</p>
+                  <p>Перекрытия первого этажа: балки перекрытия - 40х150мм,  настил пола - доска пола 35мм, утепление - 100мм.</p>
+                  <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50),  по контр – брусу 40х47 мм.</p>
+                  <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                  <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                  <p>Двери: входная  - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                  <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="complect-suburban" role="tabpanel" aria-labelledby="complect-suburban-tab">
+                  <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                  <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола  35мм.</p>
+                  <p>Перекрытия первого этажа: балки перекрытия - 40х150мм,  настил пола - доска пола 35мм, утепление - 100мм.</p>
+                  <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50),  по контр – брусу 40х47 мм.</p>
+                  <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                  <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                  <p>Двери: входная  - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                  <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="complect-warm" role="tabpanel" aria-labelledby="complect-warm-tab">
+                  <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                  <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола  35мм.</p>
+                  <p>Перекрытия первого этажа: балки перекрытия - 40х150мм,  настил пола - доска пола 35мм, утепление - 100мм.</p>
+                  <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50),  по контр – брусу 40х47 мм.</p>
+                  <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                  <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                  <p>Двери: входная  - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                  <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="complect-full" role="tabpanel" aria-labelledby="complect-full-tab">
+                  <p>Фундамент: винтовой, свая 108х2500мм (включая крыльцо), обвязка брус — В ПОДАРОК!</p>
+                  <p>Полы первого этажа: лаги пола 40х150мм, с расширителем 40х47, утепление 200мм, черновые полы – ОСП 3 - 6 мм, настил пола - доска пола  35мм.</p>
+                  <p>Перекрытия первого этажа: балки перекрытия - 40х150мм,  настил пола - доска пола 35мм, утепление - 100мм.</p>
+                  <p>Мансарда: каркас - 40х150мм, утепление — 200мм (150+50),  по контр – брусу 40х47 мм.</p>
+                  <p>Стропильная система и кровля: стропило - 40х150мм, кровля — металлочерепица – В ПОДАРОК!</p>
+                  <p>Окна: деревянные, со стеклопакетом, комплект «Зимний» (П 65)</p>
+                  <p>Двери: входная  - металлическая (Россия), внутренние – деревянные филенчатые</p>
+                  <p>Лестница: лестница мансардная – из строганного пиломатериала, с балясинами, с турникетом ограждения на мансарде. Входная - приставная, временная</p>
+
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена сегодня</span>
+                        <span class="price__value">от 673 400 ₽</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="price">
+                        <span class="price__label">Цена с 1 июля </span>
+                        <span class="price__value">от 891 300 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contact-form" data-dismiss="modal">Узнать точную стоимость</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

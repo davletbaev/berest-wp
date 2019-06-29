@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: $ff-default;
+  font-display: fallback;
+  outline: none;
+}
+
+body {
+  font-size: $fs-default;
+  line-height: $lh-default;
+  color: $primary;
+  background-color: $bg-white;
+}
+
+button {
+  color: inherit;
+}
+
+::placeholder { 
+  color: inherit;
+  opacity: 1; 
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1; 
+  text-transform: uppercase;
+}
+
+::-ms-input-placeholder {
+  color: inherit;
+  opacity: 1; 
+  text-transform: uppercase;
+}

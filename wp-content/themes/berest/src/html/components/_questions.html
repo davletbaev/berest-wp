@@ -1,0 +1,34 @@
+{% set question = [
+  'Что делать, если нет разрешения на строительство?',
+  'В чем отличие уникального проекта от типового?',
+  'Ограничен бюджет, а дом нужен, как быть?',
+  'Какой дом мне подойдет: из бруса или каркасный?',
+  'На чем можно сэкономить, не теряя качество?'
+] %}
+
+<section class="section questions">
+  <div class="questions__bg"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="section__heading">Запутались в подрядчиках, условиях и нет ясности?</h2>
+        <p>Если вы не знаете что выбрать, какая комплектация подойдет или у вас есть вопросы вроде:</p>
+        <ul class="list-unstyled questions__list">
+          {% for item in questions %}
+            <li class="media my-4 question__item">
+              <img src="img/ui/question.png" class="mr-3" alt="Вопрос">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">{{ item.title }}</h5>
+                {{ item.desc }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col">
+        {{ contactForm() }}
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+{% macro contactForm() %}
+  <div class="contact-form">
+    <button type="button" class="contact-form__close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <h5 class="contact-form__title" id="free-advice-label">Заполните ваши данные</h5>
+    <p>Чтобы наш менеджер перезвонил вам и проконсультировал по всем вопросам</p>
+
+    <form class="form">
+      <div class="form-group">
+        <label for="free-advice-name" class="visually-hidden">Введите ваше имя</label>
+        <input type="text" class="form-control" id="free-advice-name" placeholder="Введите ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="free-advice-number" class="visually-hidden">Введите ваш номер</label>
+        <input type="tel" class="form-control" id="free-advice-number" placeholder="Введите ваш номер">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg">Получить бесплатную консультацию</button>
+      </div>
+      <div class="form-group">
+        <p class="form__notice">Нажимая кнопку вы соглашаетесь на обработку персональных данных</p>
+      </div>
+    </form>
+  </div>
+{% endmacro %}  
