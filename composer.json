@@ -1,10 +1,10 @@
 {
   "require": {
-    "php": "~7.3.0",
+    "php": "~7.2.0",
     "ext-mbstring" : "*",
     "ext-gd": "*",
-    "ext-curl": "0.0.0.*",
-    "ext-exif": "0.0.0.*"
+    "ext-curl": "~7.2.15",
+    "ext-exif": "~7.2.15"
   },
   "scripts": {
     "post-install-cmd": [
